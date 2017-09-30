@@ -85,6 +85,16 @@ img{
 textarea{
     resize: vertical;
 }
+label{
+    margin: 0;
+}
+input, button, select{
+    border: none;
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
 /* STYLE RESET END */
 /* DEFAULT CLASSES START */
 .flex-container{
@@ -343,6 +353,66 @@ textarea{
 .item-controls .icon-like-ic:hover{
     background-position: -38px -80px;
 }
+.subscribe-form{
+    padding: 35px 45px;
+}
+.aside-section{
+    padding: 40px;
+}
+.aside-section + .aside-section{
+    margin-top: 30px;
+}
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"] + label{
+    font-size: 16px;
+    color: #34404b;
+    cursor: pointer;
+}
+input[type="checkbox"] + label::before{
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 4px solid #edf0f2;
+    background-color: #edf0f2;
+    margin-right: 13px;
+}
+input[type="checkbox"]:checked + label{
+    color: #ff5912;
+}
+input[type="checkbox"]:checked + label::before {
+    border-color: #ff5912;
+}
+.ui-widget.ui-widget-content{
+    border: none;
+    background-color: #edf0f2;
+    border-radius: 0;
+    height: 3px;
+}
+.ui-slider .ui-slider-range{
+    background-color: #34404b;
+}
+.min-value, .max-value{
+    position: absolute;
+    bottom: 200%;
+    color: #34404b;
+}
+.ui-widget-content .ui-state-default.ui-slider-handle{
+    width: 11px;
+    height: 11px;
+    background-color: #34404b;
+    border-radius: 50%;
+    border: none;
+    transform: translateY(-50%);
+    top: 50%;
+    outline: none;
+}
+.add-range-value{
+    margin-top: 30px;
+}
+
 /* DEFAULT COMPONENT END */
 .sale-carousel{
     min-height: 650px;
@@ -429,6 +499,10 @@ textarea{
     transform: rotate(-45deg);
     color: #fff;
 }
+.category-wrap{
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
 .adv{
     height: 104px;
     border: 1px solid #eaedef;
@@ -463,7 +537,8 @@ textarea{
 .best-sales .best-item{
     padding: 30px 25px;
 }
-.best-item-info ul, li{
+.best-item-info ul,
+.best-item-info li{
     display: inline-block;
 }
 .best-item-info{
