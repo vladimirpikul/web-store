@@ -77,31 +77,71 @@
             <div class="row">
                 <div class="col-md-3">
                     <aside class="sidebar">
-                        <div class="aside-section white-bg"></div>
+                        <div class="aside-section white-bg flex-container">
+                            <span class="aside-section-title harmonia-black-18 text-red">Categories</span>
+                            <a href="" class="harmonia-semibd-16">Man</a>
+                            <a href="" class="harmonia-semibd-16">Women</a>
+                            <a href="" class="harmonia-semibd-16">Childrens</a>
+                            <a href="" class="harmonia-semibd-16">Hot Deals</a>
+                        </div>
                         <div class="aside-section white-bg">
+                            <span class="aside-section-title harmonia-black-18 text-red">Price Filtter</span>
                             <div class="range">
                                 <div id="slider-range"></div>
                                 <div class="add-range-value flex-container justify-sp-between">
                                     <div class="range-input-reoup">
                                         <label for="fromValue">From</label>
-                                        <input type="number" name="fromValue" id="fromValue" min="0">
+                                        <input type="number" class="input-number" name="fromValue" id="fromValue" min="0">
                                     </div>
                                     <div class="range-input-reoup">
                                         <label for="toValue">To</label>
-                                        <input type="number" name="toValue" id="toValue" min="0">
+                                        <input type="number" class="input-number" name="toValue" id="toValue" min="0">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="aside-section white-bg">
                             <form>
+                                <span class="aside-section-title harmonia-black-18 text-red">Sizes</span>
                                 <div class="checkbox-group">
                                     <input type="checkbox" name="size-small" id="size-small">
                                     <label for="size-small">Small</label>
                                 </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="size-medium" id="size-medium">
+                                    <label for="size-medium">Midum</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="size-large" id="size-large">
+                                    <label for="size-large">Larg</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="size-xlarge" id="size-xlarge">
+                                    <label for="size-xlarge">X Larg</label>
+                                </div>
                             </form>
                         </div>
-                        <div class="aside-section white-bg"></div>
+                        <div class="aside-section white-bg">
+                            <form>
+                                <span class="aside-section-title harmonia-black-18 text-red">Brands</span>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="size-reebok" id="size-reebok">
+                                    <label for="size-reebok">Reebok</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="size-adidas" id="size-adidas">
+                                    <label for="size-adidas">Adidas</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="size-nike" id="size-nike">
+                                    <label for="size-nike">Nike</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="size-active" id="size-active">
+                                    <label for="size-active">Active</label>
+                                </div>
+                            </form>
+                        </div>
                     </aside>
                 </div>
                 <div class="col-md-9">
@@ -404,19 +444,41 @@
                             </div>
                         </div>
                     </div>
+                    <div class="load-more text-center white-bg">
+                        <a href="">
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <section class="default-section">
+        <div class="container">
+            <div class="subscribe-form white-bg flex-container align-center justify-sb">
+                <div class="subscribe-description">
+                    <span class="text-red harmonia-bold-18">News letter</span>
+                    <span class="harmonia-italic-14">join us now to get all news and special offers</span>
+                </div>
+                <form class="flex-container align-center">
+                    <label for="subscribe-email" class="icon-mail-ic"></label>
+                    <input type="text" class="subscribe-input harmonia-italic-14" id="subscribe-email" placeholder="type your mail here">
+                    <button class="btn btn-default harmonia-semibd-14">join us</button>
+                </form>
+            </div>
+        </div>
+    </section>
 </main>
 <footer class="white-bg">
     <div class="container">
         <div class="flex-container justify-sb align-center">
             <div class="footer-logo">
                 <a href=""><img src="img/logo.png" alt=""></a>
-                <span>some footer text</span>
+                <span class="harmonia-reg-14">shopy c 2015 . your copy right here</span>
             </div>
-            <div class="footer-nav flex-container">
+            <div class="footer-nav flex-container harmonia-reg-14">
                 <ul>
                     <li><a href="">about us</a></li>
                     <li><a href="">contact us</a></li>
@@ -433,7 +495,7 @@
                 </ul>
             </div>
             <div class="payment-methods">
-                <span class="orange-text">Payment methods</span>
+                <span class="orange-text harmonia-semibd-16">Payment methods</span>
                 <ul class="payment-methods-icon flex-container">
                     <li><span class="icon icon-amex-ic"></span></li>
                     <li><span class="icon icon-no-name-cart-1-ic"></span></li>

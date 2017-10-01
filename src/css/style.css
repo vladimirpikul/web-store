@@ -150,15 +150,20 @@ button{
 .harmonia-semibd-18{
     font-family: 'Harmonia_semibold';
     font-size: 18px;
-    color: #3c4751;
 }
 .harmonia-semibd-16{
     font-family: 'Harmonia_semibold';
     font-size: 16px;
 }
+.harmonia-semibd-14{
+    font-family: 'Harmonia_semibold';
+    font-size: 14px;
+}
 .harmonia-reg-16{
     font-size: 16px;
-    color: #495662;
+}
+.harmonia-reg-14{
+    font-size: 14px;
 }
 .harmonia-black-18{
     font-size: 18px;
@@ -172,12 +177,20 @@ button{
     font-size: 12px;
     font-family: 'Harmonia_italic';
 }
+.harmonia-italic-14 {
+    font-size: 14px;
+    font-family: 'Harmonia_italic';
+}
 .circle{
     display: inline-block;
     background-color: #ff5912;
     border-radius: 50%;
     width: 8px;
     height: 8px;
+}
+.btn-default{
+    color: #fff;
+    background-color: #ff5912;
 }
 /* DEFAULT CLASSES END */
 .title{
@@ -200,6 +213,9 @@ button{
 }
 .new-arrivals-title p, .best-sales-title p{
     margin-top: 28px;
+}
+.new-arrivals-title .harmonia-reg-16{
+    color: #495662;
 }
 /* DEFAULT COMPONENT START */
 .top-header ul li{
@@ -353,14 +369,79 @@ button{
 .item-controls .icon-like-ic:hover{
     background-position: -38px -80px;
 }
+.subscribe-description .text-red{
+    text-transform: uppercase;
+}
+.subscribe-description span + span{
+    margin-left: 23px;
+}
 .subscribe-form{
     padding: 35px 45px;
+}
+.subscribe-form .subscribe-input{
+    color: #7c8791;
+    margin-left: 8px;
+    min-width: 250px;
+    padding-right: 20px;
+}
+.subscribe-form .btn{
+    border: none;
+    border-radius: 0;
+    height: 50px;
+    width: 100px;
+}
+.subscribe-form .btn:hover{
+    color: #fff;
+    background-color: rgba(255, 89, 18, .6);
 }
 .aside-section{
     padding: 40px;
 }
 .aside-section + .aside-section{
     margin-top: 30px;
+}
+.aside-section.flex-container{
+    flex-direction: column;
+}
+.aside-section.flex-container a:hover{
+    color: #ff6422;
+}
+.aside-section.flex-container * + *,
+.aside-section .checkbox-group{
+    margin-top: 35px;
+}
+.category-wrap .col-md-9 .row *:nth-child(n+4){
+    margin-top: 30px;
+}
+.category-wrap .load-more{
+    margin-top: 30px;
+}
+.range{
+    margin-top: 70px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type='number']{
+    -moz-appearance: textfield;
+    margin: 0;
+}
+.range-input-reoup input{
+    margin-left: 10px;
+    height: 25px;
+    width: 45px;
+    background-color: #edf0f2;
+}
+.min-value, .max-value,
+.range-input-reoup .input-number{
+    font-family: 'Harmonia_semibold';
+    font-size: 14px;
+    text-align: center;
+}
+.add-range-value .range-input-reoup + .range-input-reoup{
+    margin-left: 20px;
 }
 input[type="checkbox"]{
     display: none;
@@ -451,6 +532,12 @@ input[type="checkbox"]:checked + label::before {
 .item-carousel-description p + p{
     padding-top: 15px;
 }
+.item-carousel-description p.harmonia-semibd-18{
+    color: #3c4751;
+}
+.item-carousel-description .harmonia-reg-16{
+    color: #495662;
+}
 .item-carousel-price{
     margin-top: 50px;
 }
@@ -521,6 +608,9 @@ input[type="checkbox"]:checked + label::before {
     font-size: 22px;
     margin: 0;
 }
+.sales-text .text{
+    color: #495662;
+}
 .sales-text p + p{
     margin-top: 15px;
 }
@@ -533,6 +623,12 @@ input[type="checkbox"]:checked + label::before {
 .best-item-description{
     border-left: 1px solid #f2f4f7;
     padding-left: 25px;
+}
+.best-item-description a{
+    color: inherit;
+}
+.best-sales-title .harmonia-reg-16{
+    color: #495662;
 }
 .best-sales .best-item{
     padding: 30px 25px;
@@ -574,3 +670,38 @@ input[type="checkbox"]:checked + label::before {
     opacity: 0;
     z-index: -1;
 }
+/* FOOTER START */
+footer{
+    margin-top: 60px;
+}
+footer .container{
+    padding: 85px 15px;
+}
+.footer-logo, .footer-nav{
+    color: #28313b;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+}
+.footer-nav ul + ul{
+    margin-left: 90px;
+}
+.footer-nav ul{
+    list-style: unset;
+    color: #28313b;
+}
+.footer-nav li + li{
+    margin-top: 20px;
+}
+.footer-nav li:hover{
+    color: #ff5912;
+}
+.payment-methods-icon,
+.footer-logo span{
+    margin-top: 20px;
+}
+.payment-methods-icon li + li{
+    margin-left: 10px;
+}
+/* FOOTER END */
