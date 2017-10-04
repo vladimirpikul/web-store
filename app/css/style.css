@@ -216,7 +216,7 @@ button{
 .title-red, .text-red{
     color: #ff5912;
 }
-.title-big{
+.title.big{
     font-size: 52px;
 }
 .default-section{
@@ -453,7 +453,6 @@ input[type=number]::-webkit-outer-spin-button{
 }
 input[type='number']{
     -moz-appearance: textfield;
-    margin: 0;
 }
 .range-input-reoup input{
     margin-left: 10px;
@@ -760,3 +759,26 @@ footer .container{
     margin-left: 10px;
 }
 /* FOOTER END */
+/* PRODUCT SLIDER START */
+.product-slider{
+    width: 330px;
+}
+/* PRODUCT SLIDER END */
+/* PRODUCT DESCRIPTION START */
+.size-radio input[type='radio']{
+    display: none;
+}
+.size-radio label{
+    font-size: 14px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.size-radio input[type='radio']:checked + label{
+    color: #ff5912;
+    font-size: 18px;
+}
+/* PRODUCT DESCRIPTION END */
