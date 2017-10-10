@@ -75,4 +75,8 @@ $( function() {
     // formstyler init
     $('.input-quantity').styler();
 
+    // slick nav init
+    $('.header-nav').slicknav();
+
+
 } );
