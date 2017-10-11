@@ -420,6 +420,49 @@ button{
 .category-wrap .load-more{
     margin-top: 30px;
 }
+.mobile-sidebar-btn{
+    display: none;
+    font-size: 30px;
+    color: #ff5912;
+    margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+    .mobile-sidebar-btn{
+        display: block;
+    }
+    .mobile-sidebar-btn .fa{
+        transition: all .3s linear;
+    }
+    .mobile-sidebar-wrap{
+        position: absolute;
+        transform: translateX(-150%);
+        z-index: 99;
+        transition: all .3s linear;
+        left: 0;
+        right: 0;
+    }
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        z-index: -1;
+        background-color: rgba(0, 0, 0, .4);
+        transition: all .3s linear;
+    }
+    main.show .mobile-sidebar-wrap{
+        transform: translateX(0);
+    }
+    main.show .overlay{
+        opacity: 1;
+        z-index: 98;
+    }
+    main.show .mobile-sidebar-btn .fa{
+        transform: rotate(-180deg);
+    }
+}
 .range{
     margin-top: 70px;
 }
