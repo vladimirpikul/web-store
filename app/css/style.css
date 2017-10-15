@@ -152,52 +152,6 @@ button{
 .orange-bg{
     background-color: #ff5912;
 }
-.harmonia-bold-18{
-    font-family: 'Harmonia_bold';
-    font-size: 18px;
-}
-.harmonia-bold-16{
-    font-family: 'Harmonia_bold';
-    font-size: 16px;
-}
-.harmonia-semibd-18{
-    font-family: 'Harmonia_semibold';
-    font-size: 18px;
-}
-.harmonia-semibd-16{
-    font-family: 'Harmonia_semibold';
-    font-size: 16px;
-}
-.harmonia-semibd-14{
-    font-family: 'Harmonia_semibold';
-    font-size: 14px;
-}
-.harmonia-reg-16{
-    font-size: 16px;
-}
-.harmonia-reg-14{
-    font-size: 14px;
-}
-.harmonia-black-18{
-    font-size: 18px;
-    font-family: 'Harmonia_black';
-}
-.harmonia-black-20{
-    font-size: 20px;
-    font-family: 'Harmonia_black';
-}
-.harmonia-black-22{
-    font-size: 22px;
-    font-family: 'Harmonia_black';
-}
-.harmonia-italic-12{
-    font-size: 12px;
-    font-family: 'Harmonia_italic';
-}
-.harmonia-italic-14 {
-    font-size: 14px;
-    font-family: 'Harmonia_italic';
-}
 .circle{
     display: inline-block;
     background-color: #ff5912;
@@ -210,6 +164,14 @@ button{
     color: #fff;
     background-color: #ff5912;
 }
+.btn-radius{
+    line-height: 1;
+    -webkit-border-radius: 25px;
+            border-radius: 25px;
+    border: none;
+    margin-left: 25px;
+    padding: 17px 23px;
+}
 /* DEFAULT CLASSES END */
 .title{
     font-family: "Harmonia_black";
@@ -217,11 +179,17 @@ button{
     font-size: 36px;
     margin-bottom: 25px;
 }
-.title-red, .text-red{
-    color: #ff5912;
-}
 .title.big{
     font-size: 52px;
+}
+.description-title{
+    font-family: 'Harmonia_semibold';
+    font-size: 18px;
+    color: #3c4751;
+}
+.description-text{
+    font-size: 16px;
+    color: #495662;;
 }
 .default-section{
     padding: 60px 0;
@@ -233,6 +201,10 @@ button{
     margin-top: 28px;
 }
 .new-arrivals-title .harmonia-reg-16{
+    color: #495662;
+}
+.title-text{
+    font-size: 16px;
     color: #495662;
 }
 /* DEFAULT COMPONENT START */
@@ -280,16 +252,19 @@ button{
 .header-nav a:hover{
     color: #ff5912;
 }
+.user-controls a{
+    display: inline-block;
+}
 .user-controls a + a{
     margin-left: 30px;
 }
 .user-controls .relative-link{
     position: relative;
 }
-.user-controls span{
+.cart-count{
     position: absolute;
     left: 18%;
-    top: -157%;
+    top: -110%;
     background-color: #34404b;
     width: 17px;
     height: 17px;
@@ -324,11 +299,17 @@ button{
     margin-top: 30px;
 }
 .product-item .item-title{
+    font-family: 'Harmonia_bold';
+    font-size: 18px;
     margin-bottom: 30px;
     white-space: nowrap;
     overflow: hidden;
     -o-text-overflow: ellipsis;
        text-overflow: ellipsis;
+}
+.product-item .item-price{
+    font-family: 'Harmonia_bold';
+    font-size: 18px;
 }
 .product-item .item-img{
     -webkit-transition: all .3s linear;
@@ -364,7 +345,9 @@ button{
     opacity: 1;
     z-index: 99;
 }
-.sizes{
+.more-info-on-hover .sizes{
+    font-family: 'Harmonia_regular';
+    font-size: 14px;
     margin-bottom: 30px;
 }
 .item-controls{
@@ -395,8 +378,19 @@ button{
 .item-controls .icon-like-ic:hover{
     background-position: -38px -80px;
 }
-.subscribe-description .text-red{
+.subscribe-description .orange-text{
     text-transform: uppercase;
+}
+.subscribe-description-title{
+    font-family: 'Harmonia_bold';
+    font-size: 18px;
+}
+.subscribe-description-text, .subscribe-input{
+    font-family: 'Harmonia_italic';
+    font-size: 14px;
+}
+.subscribe-input{
+    color: #7c8791;
 }
 .subscribe-description span + span{
     margin-left: 23px;
@@ -411,6 +405,7 @@ button{
     padding-right: 20px;
 }
 .subscribe-form .btn{
+    font-family: 'Harmonia_semibold';
     border: none;
     -webkit-border-radius: 0;
             border-radius: 0;
@@ -424,6 +419,19 @@ button{
 .aside-section{
     padding: 40px;
 }
+.aside-section-title{
+    font-family: 'Harmonia_black';
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+.aside-section ul li{
+    font-family: 'Harmonia_semibold';
+    font-size: 16px;
+}
+.aside-section li + li,
+.aside-section form .checkbox-group + .checkbox-group{
+    margin-top: 35px;
+}
 .aside-section + .aside-section{
     margin-top: 30px;
 }
@@ -436,10 +444,6 @@ button{
 }
 .aside-section.flex-container a:hover{
     color: #ff6422;
-}
-.aside-section.flex-container * + *,
-.aside-section .checkbox-group{
-    margin-top: 35px;
 }
 .category-wrap .col-md-9 .row>*:nth-child(n+4){
     margin-top: 30px;
@@ -503,7 +507,7 @@ button{
     }
 }
 .range{
-    margin-top: 70px;
+    margin-top: 35px;
 }
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button{
@@ -584,12 +588,22 @@ input[type="checkbox"]:checked + label::before {
 }
 .jq-number__spin,
 .jq-number__field,
-.jq-number__spin:hover{
+.jq-number__spin:hover,
+.jq-number.focused .jq-number__field{
     border: none;
     background: none;
     -webkit-box-shadow: none;
             box-shadow: none;
     outline: none;
+}
+.jq-number__spin.minus{
+    bottom: 18px;
+    left: 18px;
+}
+.jq-number__spin.minus,
+.jq-number__spin.plus{
+    width: 20px;
+    height: 20px;
 }
 .jq-number__field{
     width: 30px;
@@ -598,6 +612,8 @@ input[type="checkbox"]:checked + label::before {
     font-family: 'Harmonia_semibold';
     font-size: 18px;
     color: #ff5912;
+    width: 60px;
+    text-align: center;
 }
 /* DEFAULT COMPONENT END */
 .sale-carousel{
@@ -639,6 +655,10 @@ input[type="checkbox"]:checked + label::before {
 .sale-carousel .carousel-indicators li.active{
     background-color: #ff5912;
     height: 36px;
+}
+.carousel-price-text{
+    font-family: 'Harmonia_semibold';
+    font-size: 18px;
 }
 .item-carousel-description p + p{
     padding-top: 15px;
@@ -703,6 +723,13 @@ input[type="checkbox"]:checked + label::before {
             transform: rotate(-45deg);
     color: #fff;
 }
+.sales-block-text .phrase{
+    font-family: 'Harmonia_italic';
+}
+.sales-block-text .value{
+    font-family: 'Harmonia_black';
+    font-size: 18px;
+}
 .category-wrap{
     padding-top: 120px;
     padding-bottom: 60px;
@@ -711,7 +738,10 @@ input[type="checkbox"]:checked + label::before {
     height: 104px;
     border: 1px solid #eaedef;
 }
-.adv-block p{
+.adv-block-title{
+    font-size: 16px;
+}
+.adv-block .adv-block-text{
     margin-top: 15px;
     font-size: 12px;
     opacity: .4;
@@ -722,17 +752,35 @@ input[type="checkbox"]:checked + label::before {
     padding-right: 35px;
 }
 .sales-text .title{
+    font-family: 'Harmonia_black';
     font-size: 22px;
     margin: 0;
 }
 .sales-text .text{
     color: #495662;
 }
-.sales-text p + p{
+.sales-text span{
+    display: block;
+}
+.sales-text span + span{
     margin-top: 15px;
 }
-.sales-price .title{
+.sales-price .price-value{
     margin-left: 20px;
+    font-family: 'Harmonia_black';
+    font-size: 32px;
+}
+.sales-price .currency{
+    font-family: 'Harmonia_black';
+    font-size: 22px;
+}
+.best-item-title{
+    font-family:'Harmonia_bold';
+    font-size: 18px;
+}
+.best-item-info-price{
+    font-family: 'Harmonia_bold';
+    font-size: 16px;
 }
 .best-item-img, .best-item-description{
     display: inline-block;
@@ -761,6 +809,8 @@ input[type="checkbox"]:checked + label::before {
     vertical-align: sub;
 }
 .best-item-on-hover span{
+    font-family: 'Harmonia_semibold';
+    font-size: 16px;
     margin-left: 8px;
 }
 .best-item:hover{
@@ -799,9 +849,6 @@ footer{
 footer .container{
     padding: 85px 15px;
 }
-.footer-logo, .footer-nav{
-    color: #28313b;
-}
 .footer-logo{
     display: -webkit-box;
     display: -webkit-flex;
@@ -813,12 +860,16 @@ footer .container{
         -ms-flex-direction: column;
             flex-direction: column;
 }
+.footer-logo span,
+.footer-nav ul li{
+    font-size: 14px;
+    color: #28313b;
+}
 .footer-nav ul + ul{
     margin-left: 90px;
 }
 .footer-nav ul{
     list-style: unset;
-    color: #28313b;
 }
 .footer-nav li + li{
     margin-top: 20px;
@@ -833,8 +884,17 @@ footer .container{
 .payment-methods-icon li + li{
     margin-left: 10px;
 }
+.payment-methods span{
+    font-family: 'Harmonia_semibold';
+    font-size: 16px;
+}
 /* FOOTER END */
 /* PRODUCT SLIDER START */
+.product-wrap{
+    padding-top: 100px;
+    padding-bottom: 60px;
+    border-top: 1.5px solid rgba(237, 239, 241, .5);
+}
 .product-slider{
     width: 330px;
 }
@@ -864,8 +924,17 @@ footer .container{
 .choose-size span{
     margin-right: 25px;
 }
+.choose-size-text,
+.choose-quantity-text{
+    font-family: 'Harmonia_semibold';
+    font-size: 18px;
+}
 .order-now{
     margin-top: 40px;
+}
+.order-now-text{
+    font-family: 'Harmonia_black';
+    font-size: 20px;
 }
 .order-now .item-controls{
     margin: 0;
@@ -873,14 +942,6 @@ footer .container{
 }
 .order-now .item-controls li{
     display: inline-block;
-}
-.order-now .btn{
-    height: 50px;
-    width: 135px;
-    -webkit-border-radius: 25px;
-            border-radius: 25px;
-    border: none;
-    margin-left: 25px;
 }
 .order-now .btn:hover{
     color: #fff;
