@@ -76,7 +76,10 @@ $( function() {
     $('.input-quantity').styler();
 
     // slick nav init
-    $('.header-nav').slicknav();
+    $('.header-nav').slicknav({
+        appendTo: 'header .bottom-header .flex-container',
+        label: ''
+    });
 
 
 } );
