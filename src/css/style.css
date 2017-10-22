@@ -654,8 +654,11 @@ input[type="checkbox"]:checked + label::before {
     outline: none;
 }
 .jq-number__spin.minus{
-    bottom: 18px;
+    bottom: 15px;
     left: 18px;
+}
+.jq-number__spin.plus{
+    top: 4px;
 }
 .jq-number__spin.minus,
 .jq-number__spin.plus{
@@ -681,6 +684,17 @@ input[type="checkbox"]:checked + label::before {
     }
     .range-input-reoup input{
         width: 40px;
+    }
+}
+@media (max-width: 991px) {
+    .range-input-reoup label{
+        font-size: 14px;
+    }
+    .range-input-reoup .input-number{
+        margin-left: 5px;
+    }
+    .range-input-reoup input{
+        width: 50px;
     }
 }
 /* DEFAULT COMPONENT END */
@@ -730,6 +744,9 @@ input[type="checkbox"]:checked + label::before {
 }
 .item-carousel-description .harmonia-reg-16{
     color: #495662;
+}
+.item-carousel-description .description-title, .description-text{
+    line-height: 25px;
 }
 .item-carousel-price{
     margin-top: 50px;
@@ -809,6 +826,12 @@ input[type="checkbox"]:checked + label::before {
 @media (max-width: 991px){
     .category-wrap .col-md-9 .row>*:nth-child(n+4){
         margin-top: 0;
+    }
+}
+@media (max-width: 479px){
+    .category-wrap{
+        padding-top: 60px;
+        padding-bottom: 30px;
     }
 }
 .adv{
@@ -975,6 +998,17 @@ input[type="checkbox"]:checked + label::before {
         margin-right: 20px;
     }
 }
+@media (max-width: 479px){
+    .best-item .best-item-img{
+        margin-right: 5px;
+    }
+    .best-item-title{
+        font-size: 16px;
+    }
+    .best-item-description{
+        padding-left: 5px;
+    }
+}
 /* FOOTER START */
 footer{
     margin-top: 60px;
@@ -1077,6 +1111,9 @@ footer .container{
     line-height: 30px;
 }
 @media (max-width: 479px){
+    .product-wrap{
+        padding-top: 60px;
+    }
     .product-slider{
         width: auto;
     }
@@ -1125,11 +1162,6 @@ footer .container{
     }
 }
 @media (max-width: 991px){
-    .order-form .item-count{
-        padding-left: 70px;
-    }
-}
-@media (max-width: 991px){
     #product-option-form{
         flex-direction: column;
     }
@@ -1145,10 +1177,15 @@ footer .container{
     .order-now{
         flex-wrap: wrap;
     }
+    .order-now-text{
+        width: 50%;
+    }
+    .order-now .item-controls{
+        text-align: right;
+    }
     .order-now .btn{
         margin-left: 0;
-        margin: 0 auto;
-        margin-top: 20px;
+        margin: 20px auto 0;
     }
     .new-arrivals-title .title{
         font-size: 30px;
