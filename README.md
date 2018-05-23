@@ -1,1 +1,1 @@
-Web-store project (using GULP)
+### Web-store project (using GULP)
